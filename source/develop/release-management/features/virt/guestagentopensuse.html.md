@@ -25,7 +25,7 @@ Packaging the ovirt-guest-agent for OpenSUSE
 
 ### Current status
 
-*   Last updated: ,
+*   Last updated: 2018-05-15
 
 ### Detailed Description
 
@@ -55,6 +55,11 @@ It'll be easier to install the ovirt-guest-agent on OpenSUSE guests.
 *   URL: <http://download.opensuse.org/repositories/home:/evilissimo/openSUSE_Factory>
 *   Repo File: <http://download.opensuse.org/repositories/home:/evilissimo/openSUSE_Factory/home:evilissimo.repo>
 
+#### openSUSE Leap 42.3
+
+*   URL: <https://software.opensuse.org/download.html?project=Virtualization&package=ovirt-guest-agent>
+*   Repo File: <https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_42.3/Virtualization.repo>
+
 ### Documentation / External references
 
 #### The guest agent reports the following things
@@ -75,12 +80,13 @@ It'll be easier to install the ovirt-guest-agent on OpenSUSE guests.
 
 #### Installation
 
-`# zypper addrepo `<URL to repo file from the Repository section>
-      # zypper refresh
-      # zypper install ovirt-guest-agent-common
-      # service ovirt-guest-agent start
-      OR with systemd
-      # systemctl start ovirt-guest-agent.service
+ # zypper addrepo [URL to repo file from the Repository section] <br>
+ # zypper refresh <br>
+ # zypper install ovirt-guest-agent-common <br>
+<br>
+ # service ovirt-guest-agent start <br>
+   OR with systemd <br>
+ # systemctl start ovirt-guest-agent.service <br>
 
 ### Testing
 
